@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"testdemo\startup_stm32f429xx.o"
+"testdemo\main.o"
+"testdemo\gpio.o"
+"testdemo\tim.o"
+"testdemo\stm32f4xx_it.o"
+"testdemo\stm32f4xx_hal_msp.o"
+"testdemo\stm32f4xx_hal_tim.o"
+"testdemo\stm32f4xx_hal_tim_ex.o"
+"testdemo\stm32f4xx_hal_rcc.o"
+"testdemo\stm32f4xx_hal_rcc_ex.o"
+"testdemo\stm32f4xx_hal_flash.o"
+"testdemo\stm32f4xx_hal_flash_ex.o"
+"testdemo\stm32f4xx_hal_flash_ramfunc.o"
+"testdemo\stm32f4xx_hal_gpio.o"
+"testdemo\stm32f4xx_hal_dma_ex.o"
+"testdemo\stm32f4xx_hal_dma.o"
+"testdemo\stm32f4xx_hal_pwr.o"
+"testdemo\stm32f4xx_hal_pwr_ex.o"
+"testdemo\stm32f4xx_hal_cortex.o"
+"testdemo\stm32f4xx_hal.o"
+"testdemo\system_stm32f4xx.o"
+"testdemo\pwm.o"
+--library_type=microlib --strict --scatter "TestDemo\TestDemo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TestDemo.map" -o TestDemo\TestDemo.axf
